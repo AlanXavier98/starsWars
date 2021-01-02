@@ -22,7 +22,8 @@ class Lado extends StatelessWidget {
               RaisedButton(
                 color: Colors.black,
                 onPressed: () {
-                  Navigator.pushNamed(context, "ladoSombrio");
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => LadoSombrio()));
                 },
                 child: Text("Lado Sombrio",
                     style: TextStyle(color: Colors.white, fontSize: 20)),
@@ -31,7 +32,8 @@ class Lado extends StatelessWidget {
               RaisedButton(
                 color: Colors.white,
                 onPressed: () {
-                  Navigator.pushNamed(context, "ladoForca");
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => LadoForca()));
                 },
                 child: Text("Lado da Força",
                     style: TextStyle(
